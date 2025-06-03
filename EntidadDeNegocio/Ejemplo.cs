@@ -8,5 +8,6 @@ namespace EntidadDeNegocio
 {
    public class Ejemplo
     {
+        //hola
     }
 }
