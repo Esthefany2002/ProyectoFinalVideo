@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35A309DA-3046-442D-8F06-07640C53191A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfazDeUsuario</RootNamespace>
+    <AssemblyName>InterfazDeUsuario</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CRUDCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDCargo.Designer.cs">
+      <DependentUpon>CRUDCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDCategoria.Designer.cs">
+      <DependentUpon>CRUDCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDEmpleado.Designer.cs">
+      <DependentUpon>CRUDEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDEstadoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDEstadoVenta.Designer.cs">
+      <DependentUpon>CRUDEstadoVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDGenero.Designer.cs">
+      <DependentUpon>CRUDGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDInventario.Designer.cs">
+      <DependentUpon>CRUDInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDPlataforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDPlataforma.Designer.cs">
+      <DependentUpon>CRUDPlataforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDProveedor.Designer.cs">
+      <DependentUpon>CRUDProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDVideoJuegos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUDVideoJuegos.Designer.cs">
+      <DependentUpon>CRUDVideoJuegos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioEmpleado.Designer.cs">
+      <DependentUpon>InicioEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CRUDCargo.resx">
+      <DependentUpon>CRUDCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDCategoria.resx">
+      <DependentUpon>CRUDCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDEmpleado.resx">
+      <DependentUpon>CRUDEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDEstadoVenta.resx">
+      <DependentUpon>CRUDEstadoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDGenero.resx">
+      <DependentUpon>CRUDGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDInventario.resx">
+      <DependentUpon>CRUDInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDPlataforma.resx">
+      <DependentUpon>CRUDPlataforma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDProveedor.resx">
+      <DependentUpon>CRUDProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUDVideoJuegos.resx">
+      <DependentUpon>CRUDVideoJuegos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioEmpleado.resx">
+      <DependentUpon>InicioEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadDeNegocio\EntidadDeNegocio.csproj">
+      <Project>{3082b1ad-c66b-4401-90e3-bec0b5223090}</Project>
+      <Name>EntidadDeNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicaDeNegocio\LogicaDeNegocio.csproj">
+      <Project>{2d476165-2110-40e5-9049-cc61c23beb7e}</Project>
+      <Name>LogicaDeNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Word Art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple and White Playful Video Games Day Instagram Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logotipo gamer sencillo minimalista azul .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple and White Playful Video Games Day Instagram Post1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue and black vintage gamer party birthday invitation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 004409.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10879-scaled %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasy-arcade-game-background-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 105920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 111204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 1112041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logotipo gamer sencillo minimalista azul 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue and black vintage gamer party birthday invitation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-ilustracion-de-marco-amarillo-redondo-sonic-the-hedgehog-3-sonic-y-los-anillos-secretos-sonic-generaciones-sonic-desatado-anillo-de-oro-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-ilustracion-de-marco-amarillo-redondo-sonic-the-hedgehog-3-sonic-y-los-anillos-secretos-sonic-generaciones-sonic-desatado-anillo-de-oro-thumbnail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game01660x595-1200x600 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 1059201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 153401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amarillo Videojuegos Retro Cumpleaños Invitación.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amarillo Videojuegos Retro Cumpleaños Invitación1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Post de Instagram Descuentos videojuegos Moderno Violeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 155803.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 160035.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logotipo gamer sencillo minimalista azul 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 162249.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2025-05-17 a las 22.28.22_33123eb6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 1059202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-17 1059203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %288%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
