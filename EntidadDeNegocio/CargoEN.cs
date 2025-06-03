@@ -25,6 +25,5 @@ namespace EntidadDeNegocio
             /// Nombre o descripción del cargo.
             /// </summary>
             public string Nombre { get; set; }
-            public string Fecha { get; set; }
     }
 }
